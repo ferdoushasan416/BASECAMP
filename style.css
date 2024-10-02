@@ -98,14 +98,15 @@ padding-right: 12.5rem !important;
 margin-left: auto !important;
 margin-right: auto !important;
 }
-@media only screen and (max-width:1600px) {
+@media only screen and (max-width:1800px) {
   section,
   .site-header,
   .site-footer {
-  padding-left: 4.5rem !important;
-  padding-right: 4.5rem !important;
+  padding-left: 8.5rem !important;
+  padding-right: 8.5rem !important;
   }
 }
+
 @media only screen and (max-width:1400px) {
   section,
   .site-header,
@@ -403,7 +404,7 @@ Hero Css Start
 }
 .hero-content h1 span {
   background: linear-gradient(90deg, #DF5730 9.13%, #7F00FF 91.35%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .hero-list-content ul li {
@@ -455,6 +456,20 @@ Hero Css Start
   line-height: 12px;
   font-weight: 400;
   color: #B3B3B3;
+}
+@media only screen and (max-width:767px) {
+  .review-footer {
+    display: block;
+  }
+  .review-info {
+    display: block;
+  }
+  .review-info div {
+    margin-top: 12px;
+  }
+  .our-services-box.hero-review-box p {
+    margin-bottom: 40px !important;
+  }
 }
 .hero-inner {
 	display: grid;
@@ -604,8 +619,24 @@ Get More Css Start
 .section-title h2 span {
   color: #DF5730;
 }
+.get-more-img {
+  position: relative;
+}
+.get-more-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 0, 7, 0.6);
+  z-index: 2;
+}
 .get-more-img img {
 	width: 100%;
+  height: 600px;
+  border-radius: 32px;
+  object-fit: cover;
 }
 .get-more-content {
   position: relative;
@@ -634,6 +665,9 @@ Get More Css Start
     font-size: 40px;
     line-height: 55px;
   }
+  .get-more-img img {
+    height: 500px;
+  }
 }
 @media only screen and (max-width:767px) {
   .section-title h2 {
@@ -648,6 +682,9 @@ Get More Css Start
     width: 140px;
     height: 140px;
     font-size: 15px;
+  }
+  .get-more-img img {
+    height: 300px;
   }
 }
 /*
@@ -975,8 +1012,17 @@ How It Work Start
     padding-bottom: 40px;
   }
   .how-it-work-content h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 12px;
+    margin-top: 10px;
+  }
+  .how-it-work-content p {
+    font-size: 14px;
+  }
+  .how-it-work-content-wrap {
+    display: block;
+    gap: 25px;
+    padding: 15px 20px 30px 20px;
   }
 }
 /*
@@ -1188,6 +1234,11 @@ h2 {
 .marketing-box-left .site-btn {
   margin: 20px 0;
 }
+@media only screen and (max-width:1199px) {
+  .marketing-box-left {
+    width: 60%;
+  }
+}
 @media only screen and (max-width:991px) {
   .marketing-box-wrap {
     display: flex;
@@ -1198,6 +1249,7 @@ h2 {
   }
   .marketing-box-right {
     width: 100%;
+    margin-top: -20px;
   }
   .marketing-box-left h2 {
     font-size: 40px;
@@ -1211,6 +1263,7 @@ h2 {
   .marketing-box-left h2 {
     font-size: 30px;
     line-height: 32px;
+    margin-bottom: 0;
   }
 }
 /*
